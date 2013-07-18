@@ -22,6 +22,8 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
+	<script type="text/javascript" src="//use.typekit.net/acy4uiv.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
