@@ -75,11 +75,11 @@
 </head>
 
 <body <?php body_class(); ?> id="<?php echo  strtolower(str_replace(' ','-',get_the_title())); ?>">
-		<div id="header">
+		<!-- <div id="header">
 			<a id="logo" href="/"></a>
 			<div id="nav">
-					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+					<?php //wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</div>
 		</div>
-		<div id="main-wrap">
+		<div id="main-wrap"> -->
 

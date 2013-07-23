@@ -1,10 +1,10 @@
 $(document).ready(function() {
-	centerItem('#page',1000);
+	centerItem('#disclaimer-popup',485, 255);
 
 });
 
 $(window).resize(function() {
-	centerItem('#page',1000);
+	centerItem('#disclaimer-popup',485, 255);
 
 });
 
@@ -27,11 +27,23 @@ $('.form-input').each(function(){
 
 function centerItem(item,iWidth,iHeight){  
    windowWidth = $(window).width();
-   windowHeight = $(window).height();
+   windowHeight = $(document).height();
    var w = windowWidth - iWidth; 
    var h = windowHeight - iHeight;
    $(item).css({
        'left': w/2,
        'top':h/2
    });   
+}
+
+function showDisclaimer() {
+	var winH = $(document).height();
+	$('#disclaimer-popup').fadeIn('slow');
+	$('#overlay').css('height', winH);
+	$('#overlay').fadeIn('slow');
+}
+
+function closeDisclaimer() {
+	$('#disclaimer-popup').fadeOut('slow');
+	$('#overlay').fadeOut('slow');
 }
