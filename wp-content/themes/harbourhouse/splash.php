@@ -36,7 +36,7 @@ get_header(); ?>
 			RIVER COURSE</br>
 			KIAWAH ISLAND, SC</br>
 			09/15/2013 AT 12:00PM</br>
-			<a href="#" target="_blank">MORE INFO</a>
+			<a href="/Golf_Tournament_091513.pdf" target="_blank">MORE INFO</a>
 		</div>
 		<div id="contact-box" class="box brandon-bold">
 			<div class="title brandon-black">contact us</div>
