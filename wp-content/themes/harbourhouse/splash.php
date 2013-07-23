@@ -5,20 +5,22 @@
 get_header(); ?>
 
 <div id="bg-cont">
-	<div id="logo"></div>
-	<div id="info-cont">
-		<div class="overlay"></div>
-		<div id="big-quote" class="brandon-bold">
-			"HARBOUR HOUSE careS for THOSE<br/> WHO HAVE SERVED &amp; SACRIFICED."
+	<div class="mid-cont">
+		<div id="logo"></div>
+		<div id="info-cont">
+			<div class="overlay"></div>
+			<div id="big-quote" class="brandon-bold">
+				"HARBOUR HOUSE careS for THOSE<br/> WHO HAVE SERVED &amp; SACRIFICED."
+			</div>
+			<div id="quote-author" class="brandon-medium">
+				–Major General James E Livingston
+			</div>
+			<div id="sub-quote" class="brandon-light-italic">
+				USMC, Ret., Medal of Honor Recipient / Mount Pleasant, SC RESIDENT / Harbour House Honorary Chairman 
+			</div>
+			<div class="line"></div>
+			<div id="button-cont"><a id="donate-button" class="brandon-bold" href="https://app.etapestry.com/onlineforms/CharlestonHarbourHouse/CHHDONATIONS.html" target="_blank">donate now</a></div>
 		</div>
-		<div id="quote-author" class="brandon-medium">
-			–Major General James E Livingston
-		</div>
-		<div id="sub-quote" class="brandon-light-italic">
-			USMC, Ret., Medal of Honor Recipient / Mount Pleasant, SC RESIDENT / Harbour House Honorary Chairman 
-		</div>
-		<div class="line"></div>
-		<div id="button-cont"><a id="donate-button" class="brandon-bold" href="#" target="_blank">donate now</a></div>
 	</div>
 
 </div>
@@ -33,7 +35,7 @@ get_header(); ?>
 			<span class="brandon-black">GOLF TOURNAMENT</span>
 			RIVER COURSE</br>
 			KIAWAH ISLAND, SC</br>
-			09/13/2013 AT 1:00PM</br>
+			09/15/2013 AT 12:00PM</br>
 			<a href="#" target="_blank">MORE INFO</a>
 		</div>
 		<div id="contact-box" class="box brandon-bold">

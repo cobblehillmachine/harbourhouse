@@ -29,12 +29,13 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #info-cont {display:inline-block; margin-top:125px; width:1000px; color:#fff; text-transform:uppercase;}
 #info-cont .overlay {background:#000; opacity:.7; filter:alpha(opacity=70); position:absolute; width:1000px; height:374px; z-index:0;}
 #info-cont #big-quote, #info-cont #quote-author, #info-cont #sub-quote, #button-cont {z-index:10; width:1000px; position:absolute;}
-#info-cont #big-quote {font-size:42px; margin-top:35px; line-height:50px;}
+#info-cont #big-quote {font-size:42px; margin-top:35px; line-height:50px; letter-spacing:3px;}
 #info-cont #quote-author {font-size:16px; margin-top:150px;}
 #info-cont #sub-quote {font-size:13px; margin-top:175px;}
 #info-cont .line {width:875px; height:1px; background:#fff; margin-top:225px; position:absolute; margin-left:60px;}
 #button-cont {margin-top:285px;}
 #info-cont #donate-button {background:#d91a22; font-size:26px; padding:22px 18px;}
+#info-cont #donate-button:hover {background:#fff; color:#d91a22;}
 #gray-cont {width:100%; padding-bottom:15px; background:url(../images/star.png) no-repeat  center 25px #e6e7e8; height:125px; float:left; margin-bottom:40px; font-size:13px; color:#000; text-transform:uppercase; text-align:center;}
 #gray-cont span {display:inline-block; margin-top:65px;}
 #boxes-cont {float:left; width:100%; padding-bottom:50px;}
@@ -43,13 +44,18 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #boxes-cont #contact-box {margin-left:20px;}
 #boxes-cont .box span {font-size:17px; width:100%; float:left; margin-top:10px;}
 #boxes-cont .box a {font-size:14px; color:#d91a22; float:left; width:100%; margin:15px 0 12px 0; }
+#boxes-cont .box a:hover {text-decoration:underline;}
 #overlay {width:100%; height:100%; background:#000; opacity:.7; filter:alpha(opacity=70); display:none; position:absolute; top:0; left:0; z-index:10;}
 #disclaimer-link {float:left; color:#000; width:100%; font-size:13px; color:#e6e7e8; margin-top:30px; text-align:center; cursor:pointer;}
+#disclaimer-link:hover {color:#000;}
 #disclaimer-popup {display:none; width:355px; height:165px; background:#dedede; z-index:100; position:absolute; padding:45px 65px; text-align:center; text-transform:uppercase;}
 #disclaimer-popup #close {position:absolute; top:15px; right:15px; font-family:Arial; cursor:pointer; width:20px; height:20px;}
 #disclaimer-popup span {font-size:10px;}
 
-
+@media only screen and (min-device-width:768px) and (max-device-width:1024px){
+	#overlay {min-width:768px !important; max-width:1024px !important; width:1000px !important;}
+	#disclaimer-popup {left:265px !important;}
+}	
 
 
 

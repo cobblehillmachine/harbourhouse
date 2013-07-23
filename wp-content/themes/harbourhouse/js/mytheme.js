@@ -38,8 +38,9 @@ function centerItem(item,iWidth,iHeight){
 
 function showDisclaimer() {
 	var winH = $(document).height();
+	var winW = $(window).width();
 	$('#disclaimer-popup').fadeIn('slow');
-	$('#overlay').css('height', winH);
+	$('#overlay').css({'height': winH, 'width': winW});
 	$('#overlay').fadeIn('slow');
 }
 
