@@ -26,7 +26,7 @@ get_header(); ?>
 </div>
 <div id="gray-cont" class="brandon-medium">
 	<span>OUR MISSION IS TO provide a safe harbor to ease our military &amp; veteran families’ burden</br>
-	while their loved ones receive treatment at the VA Medical Center</span>
+	while their loved ones receive treatment at the <a href="http://www.charleston.va.gov/" target="_blank">VA Medical Center</a></span>
 </div>
 <div id="boxes-cont">
 	<div class="mid-cont">

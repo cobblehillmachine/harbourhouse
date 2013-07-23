@@ -1,5 +1,5 @@
 body {margin:0; padding:0; width:100%; min-width:1000px;}
-a {text-decoration:none; color:#fff;}
+a {text-decoration:none; color:#000;}
 a img {border:0;}
 ul {list-style:none; padding:0; margin:0;}
 input {-webkit-appearance:none;}
@@ -34,9 +34,10 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #info-cont #sub-quote {font-size:13px; margin-top:175px;}
 #info-cont .line {width:875px; height:1px; background:#fff; margin-top:225px; position:absolute; margin-left:60px;}
 #button-cont {margin-top:285px;}
-#info-cont #donate-button {background:#d91a22; font-size:26px; padding:22px 18px;}
+#info-cont #donate-button {background:#d91a22; color:#fff; font-size:26px; padding:22px 18px;}
 #info-cont #donate-button:hover {background:#fff; color:#d91a22;}
 #gray-cont {width:100%; padding-bottom:15px; background:url(../images/star.png) no-repeat  center 25px #e6e7e8; height:125px; float:left; margin-bottom:40px; font-size:13px; color:#000; text-transform:uppercase; text-align:center;}
+#gray-cont a:hover {text-decoration:underline;}
 #gray-cont span {display:inline-block; margin-top:65px;}
 #boxes-cont {float:left; width:100%; padding-bottom:50px;}
 #boxes-cont .box {float:left; width:425px; border:1px solid #000; margin-left:60px; font-size:15px; color:#000; text-align:center;}
