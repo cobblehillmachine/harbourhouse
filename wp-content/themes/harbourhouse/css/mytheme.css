@@ -27,7 +27,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #bg-cont {float:left; width:100%; height:720px; background:url(../images/splash.jpg) no-repeat; background-size:cover; text-align:center;}
 #logo {display:inline-block; width:217px; height:215px; background:url(../images/logo.png) no-repeat;}
 #info-cont {display:inline-block; margin-top:125px; width:1000px; color:#fff; text-transform:uppercase;}
-#info-cont .overlay {background:#000; opacity:.7; filter:alpha(opacity=70); position:absolute; width:1000px; height:374px; z-index:0;}
+#info-cont .overlay {background:#000; opacity:.7; filter:alpha(opacity=70); position:absolute; width:1000px; height:374px; z-index:0; top:346px;}
 #info-cont #big-quote, #info-cont #quote-author, #info-cont #sub-quote, #button-cont {z-index:10; width:1000px; position:absolute;}
 #info-cont #big-quote {font-size:42px; margin-top:35px; line-height:50px; letter-spacing:3px;}
 #info-cont #quote-author {font-size:16px; margin-top:150px;}

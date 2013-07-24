@@ -35,14 +35,14 @@ get_header(); ?>
 			<span class="brandon-black">GOLF TOURNAMENT</span>
 			RIVER COURSE</br>
 			KIAWAH ISLAND, SC</br>
-			09/15/2013 AT 12:00PM</br>
+			09/15/2013 AT 1:00PM</br>
 			<a href="/Golf_Tournament_091513.pdf" target="_blank">MORE INFO</a>
 		</div>
 		<div id="contact-box" class="box brandon-bold">
 			<div class="title brandon-black">contact us</div>
 			<span class="brandon-black">HARBOUR HOUSE</span>
 			P.O. BOX 829</br>
-			JOHN’S ISLAND, SC 29457</br>
+			JOHNS ISLAND, SC 29457</br>
 			877-437-5186</br>
 			<a href="mailto:info@charlestonharbourhouse.com">INFO@CHARLESTONHARBOURHOUSE.COM</a>
 		</div>
