@@ -35,7 +35,7 @@ get_header(); ?>
 			<span class="brandon-black">GOLF TOURNAMENT</span>
 			RIVER COURSE</br>
 			KIAWAH ISLAND, SC</br>
-			09/15/2013 AT 1:00PM</br>
+			09/15/2013 AT 12:00PM</br>
 			<a href="/Golf_Tournament_091513.pdf" target="_blank">MORE INFO</a>
 		</div>
 		<div id="contact-box" class="box brandon-bold">
