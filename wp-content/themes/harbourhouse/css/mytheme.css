@@ -52,6 +52,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #disclaimer-popup {display:none; width:355px; height:165px; background:#dedede; z-index:100; position:absolute; padding:45px 65px; text-align:center; text-transform:uppercase;}
 #disclaimer-popup #close {position:absolute; top:15px; right:15px; font-family:Arial; cursor:pointer; width:20px; height:20px;}
 #disclaimer-popup span {font-size:10px;}
+#bg-cont, #gray-cont, #boxes-cont {display:none;}
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px){
 	#overlay {min-width:768px !important; max-width:1024px !important; width:1000px !important;}

@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	centerItem('#disclaimer-popup',485, 255);
+	$('#bg-cont, #gray-cont, #boxes-cont').fadeIn('slow');
 
 });
 
