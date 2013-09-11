@@ -75,11 +75,18 @@
 </head>
 
 <body <?php body_class(); ?> id="<?php echo  strtolower(str_replace(' ','-',get_the_title())); ?>">
-		<!-- <div id="header">
-			<a id="logo" href="/"></a>
-			<div id="nav">
-					<?php //wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+		<?php if(is_front_page()) { ?>
+			<div id="home-bg"></div>
+		<?php } ?>
+		<div id="header">
+			<div class="mid-cont">
+				<a id="logo" href="/"></a>
+				<div id="nav">
+					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+				</div>
+				<a id="donate-btn" href="http://">DONATE</a>
 			</div>
 		</div>
-		<div id="main-wrap"> -->
+		<div id="main-wrap">
+			
 

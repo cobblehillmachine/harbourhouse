@@ -682,3 +682,25 @@ function diww_favicon() {
 }
 add_action('wp_head', 'diww_favicon');
 add_action('admin_head', 'diww_favicon');
+
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+
+	$args1 = array(
+		'labels' => array(
+			'name' => __( 'Home CTAs' ),
+			'singular_name' => __( 'Home CTA' )
+		),
+		'public' => true,
+		//'has_archive' => true,
+		'rewrite' => array('slug' => ''),
+		'supports' => array( 'title' )
+	);
+  
+  	register_post_type( 'Home CTAs', $args1);
+	//register_taxonomy_for_object_type('post_tag', 'offerings');
+	//register_taxonomy_for_object_type('category', 'recipes');
+
+	// register_taxonomy_for_object_type('post_tag', 'page');
+	//register_taxonomy_for_object_type('category', 'page');
+}

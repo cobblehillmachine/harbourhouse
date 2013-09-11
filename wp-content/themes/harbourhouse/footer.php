@@ -11,9 +11,15 @@
 ?>
 
 	
-		<!-- </div>
+		</div>
 		<div id="footer">
-		</div> -->
+			<div class="mid-cont">
+				<div id="copyright">&copy; 2013 harbour house of charleston</div>
+				<a id="facebook" href="http://facebook.com" target="_blank"></a>
+				<a id="news-link" href="#" target="_blank">subscribe to newsletter</a>
+			</div>
+			
+		</div> 
 <?php wp_footer(); ?>
 
 </body>
