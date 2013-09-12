@@ -77,6 +77,11 @@
 <body <?php body_class(); ?> id="<?php echo  strtolower(str_replace(' ','-',get_the_title())); ?>">
 		<?php if(is_front_page()) { ?>
 			<div id="home-bg"></div>
+		<?php } else { ?>
+			<?php $header_image = get_header_image();
+			if ( ! empty( $header_image ) ) : ?>
+				<div id="banner" style="background:url(<?php echo esc_url( $header_image ); ?>)" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>"></div>
+			<?php endif; ?>
 		<?php } ?>
 		<div id="header">
 			<div class="mid-cont">

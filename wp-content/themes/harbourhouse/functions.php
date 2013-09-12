@@ -157,53 +157,23 @@ function twentyeleven_setup() {
 
 	// Default custom headers packaged with the theme. %s is a placeholder for the theme template directory URI.
 	register_default_headers( array(
-		'wheel' => array(
-			'url' => '%s/images/headers/wheel.jpg',
-			'thumbnail_url' => '%s/images/headers/wheel-thumbnail.jpg',
+		'Header 1' => array(
+			'url' => '%s/images/header1.jpg',
+			'thumbnail_url' => '%s/images/header1.jpg',
 			/* translators: header image description */
-			'description' => __( 'Wheel', 'twentyeleven' )
+			'description' => __( 'Header 1', 'twentyeleven' )
 		),
-		'shore' => array(
-			'url' => '%s/images/headers/shore.jpg',
-			'thumbnail_url' => '%s/images/headers/shore-thumbnail.jpg',
+		'Header 2' => array(
+			'url' => '%s/images/header2.jpg',
+			'thumbnail_url' => '%s/images/header2.jpg',
 			/* translators: header image description */
-			'description' => __( 'Shore', 'twentyeleven' )
+			'description' => __( 'Header 2', 'twentyeleven' )
 		),
-		'trolley' => array(
-			'url' => '%s/images/headers/trolley.jpg',
-			'thumbnail_url' => '%s/images/headers/trolley-thumbnail.jpg',
+		'Header 3' => array(
+			'url' => '%s/images/header3.jpg',
+			'thumbnail_url' => '%s/images/header3.jpg',
 			/* translators: header image description */
-			'description' => __( 'Trolley', 'twentyeleven' )
-		),
-		'pine-cone' => array(
-			'url' => '%s/images/headers/pine-cone.jpg',
-			'thumbnail_url' => '%s/images/headers/pine-cone-thumbnail.jpg',
-			/* translators: header image description */
-			'description' => __( 'Pine Cone', 'twentyeleven' )
-		),
-		'chessboard' => array(
-			'url' => '%s/images/headers/chessboard.jpg',
-			'thumbnail_url' => '%s/images/headers/chessboard-thumbnail.jpg',
-			/* translators: header image description */
-			'description' => __( 'Chessboard', 'twentyeleven' )
-		),
-		'lanterns' => array(
-			'url' => '%s/images/headers/lanterns.jpg',
-			'thumbnail_url' => '%s/images/headers/lanterns-thumbnail.jpg',
-			/* translators: header image description */
-			'description' => __( 'Lanterns', 'twentyeleven' )
-		),
-		'willow' => array(
-			'url' => '%s/images/headers/willow.jpg',
-			'thumbnail_url' => '%s/images/headers/willow-thumbnail.jpg',
-			/* translators: header image description */
-			'description' => __( 'Willow', 'twentyeleven' )
-		),
-		'hanoi' => array(
-			'url' => '%s/images/headers/hanoi.jpg',
-			'thumbnail_url' => '%s/images/headers/hanoi-thumbnail.jpg',
-			/* translators: header image description */
-			'description' => __( 'Hanoi Plant', 'twentyeleven' )
+			'description' => __( 'Header 3', 'twentyeleven' )
 		)
 	) );
 }
@@ -342,7 +312,7 @@ if ( ! function_exists( 'twentyeleven_continue_reading_link' ) ) :
  * Returns a "Continue Reading" link for excerpts
  */
 function twentyeleven_continue_reading_link() {
-	return ' <a href="'. esc_url( get_permalink() ) . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) . '</a>';
+	return '';
 }
 endif; // twentyeleven_continue_reading_link
 
@@ -696,8 +666,20 @@ function create_post_type() {
 		'rewrite' => array('slug' => ''),
 		'supports' => array( 'title' )
 	);
+	
+	$args2 = array(
+		'labels' => array(
+			'name' => __( 'Supporters' ),
+			'singular_name' => __( 'Supporter' )
+		),
+		'public' => true,
+		//'has_archive' => true,
+		'rewrite' => array('slug' => ''),
+		'supports' => array( 'title', 'thumbnail' )
+	);
   
   	register_post_type( 'Home CTAs', $args1);
+	register_post_type( 'Supporters', $args2);
 	//register_taxonomy_for_object_type('post_tag', 'offerings');
 	//register_taxonomy_for_object_type('category', 'recipes');
 

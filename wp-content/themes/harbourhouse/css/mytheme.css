@@ -1,9 +1,10 @@
-body {margin:0; padding:0; width:100%; min-width:1280px; border-top:14px solid #002157;}
+body {margin:0; padding:0; width:100%; min-width:1280px; border-top:14px solid #002157; font:normal 18px "brandon-grotesque"; letter-spacing:1px; line-height:25px;}
 a {text-decoration:none; color:#c80101;}
 a img {border:0;}
 ul {list-style:none; padding:0; margin:0;}
 input {-webkit-appearance:none;}
 p {margin:0 0 0 0;}
+img {max-width:100%;}
 .mid-cont {position:relative; width:1000px; margin:auto;}
 /*ul, li, ol, fieldset {list-style:none; padding:0; margin:0; border:none;}
 input, select, textarea {-webkit-appearance:none; -webkit-border-radius:0px;}
@@ -15,26 +16,34 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 ::-moz-placeholder {color: #000; opacity:1; filter:alpha(opacity=100);}
 :-ms-input-placeholder {color: #000; opacity:1; filter:alpha(opacity=100);
 */
-.last, #header #nav li:last-child, #cta-cont .home-cta:last-child {margin-right:0;}
-.button {text-transform:uppercase; color:#fff; font-size:15px; background:#cb2324; border:3px solid #cb2324; padding:18px 35px;}
+.last, #header #nav li:last-child, #cta-cont .home-cta:last-child, .member-cont:nth-child(3n+4), .supporter:nth-child(4n+4) {margin-right:0 !important;}
+.button {text-transform:uppercase; color:#fff; font-size:15px; background:#cb2324; border:3px solid #cb2324; padding:18px 35px; text-align:center;}
 .button:hover {background:#fff; color:#cb2324;}
-#header, #footer, #main-wrap, #gray-cont, #cta-cont {float:left; width:100%;}
+#header, #footer, #main-wrap, #gray-cont, #cta-cont, .container, .text, #families-cont .gray, .member-cont div, #supporters-cont {float:left; width:100%;}
+#banner {position:absolute; top:100px; left:0; width:100%; height:269px;}
+#main-wrap {margin-top:269px;}
+.page-title {font-size:26px; float:left; width:100%; padding-bottom:20px; border-bottom:1px solid #000; margin:40px 0 25px 0;}
+.gray {background:#e6e7e8;}
+.hidden {display:none;}
+.overlay {position:absolute; top:0; left:0; background:#000; opacity:.7; filter:alpha(opacity=70); z-index:10;}
 
 /*FONTS*/
 .brandon-light-italic, #sub-quote {font-family: "brandon-grotesque",sans-serif; font-style: italic; font-weight: 100; letter-spacing:0.5px;}
 .brandon-regular {font-family: "brandon-grotesque",sans-serif; font-style: normal; font-weight: 400; letter-spacing:3px;}
-.brandon-bold, #header #nav li a, #big-quote, #donate-button, .button, #gray-cont span, #cta-cont .cta-link, #news-link {font-family: "brandon-grotesque",sans-serif; font-style: normal; font-weight: 700; letter-spacing:3px; text-transform:uppercase;}
-.brandon-black, #header #donate-btn, #cta-cont .cta-title {font-family: "brandon-grotesque",sans-serif; font-style: normal; font-weight: 900; letter-spacing:3px; text-transform:uppercase;}
-.brandon-medium, #quote-author, #gray-cont, #footer #copyright {font-family: "brandon-grotesque",sans-serif; font-style: normal; font-weight: 500; letter-spacing:2px; text-transform:uppercase;}
+.brandon-bold, #header #nav li a, #big-quote, #donate-button, .button, #gray-cont span, #cta-cont .cta-link, #news-link, .page-title, .phase-nbr, .arrows, #about-quote p strong, #hh-info,
+.member-cont .info-cont, .bio-link, .bio-cont a, .supporter  {font-family: "brandon-grotesque",sans-serif; font-style: normal; font-weight: 700; letter-spacing:3px; text-transform:uppercase;}
+.brandon-black, #header #donate-btn, #cta-cont .cta-title, #total-goal {font-family: "brandon-grotesque",sans-serif; font-style: normal; font-weight: 900; letter-spacing:3px; text-transform:uppercase;}
+.brandon-medium, #quote-author, #gray-cont, #footer #copyright, #goal-cont .phase .phase-title, #about-quote p, .member-cont .member-position {font-family: "brandon-grotesque",sans-serif; font-style: normal; font-weight: 500; letter-spacing:2px; text-transform:uppercase;}
 
 /*HEADER*/
+#header {background:#fff; padding-bottom:28px;}
 #header #nav {float:left; width:100%; margin:30px 0 0 112px;}
 #header #nav li {float:left; margin-right:65px;}
 #header #nav li:nth-child(2) {margin-right:340px;}
 #header #nav li a {font-size:18px;}
 #header #nav li a:hover {color:#000;}
-#header #nav .current-menu-item a {border-bottom:4px solid #000; color:#000;}
-#logo {position:absolute; width:217px; height:215px; background:url(../images/logo.png) no-repeat; margin-left:375px; left:0;}
+#header #nav .current-menu-item a, #header #nav .current-page-ancestor a {border-bottom:4px solid #000; color:#000;}
+#logo {position:absolute; width:217px; height:215px; background:url(../images/logo2.jpg) no-repeat; margin-left:375px; left:0;}
 #header #donate-btn {position:absolute; right:0; top:0; background:#002157; color:#fff; padding:2px 25px 12px 25px; margin-right:-100px;}
 #header #donate-btn:hover {color:#666;}
 
@@ -46,6 +55,9 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #footer #facebook:hover {background-position:0 -22px;}
 
 /*HOME*/
+#home #header {background:transparent; padding-bottom:0;}
+#home #logo {background:url(../images/logo.png) no-repeat;}
+#home #main-wrap {margin-top:0;}
 #home-bg {position:absolute; top:0; left:0; width:100%; height:720px; background:url(../images/splash.jpg) no-repeat; background-size:cover; text-align:center; z-index:-1; min-width:1280px; top:14px;}
 #home-quote-cont {float:left; width:875px; padding:48px 65px 42px 65px; text-align:center; background:url(../images/quote-overlay.png) repeat; margin-top:200px; color:#fff; text-transform:uppercase; height:372px;}
 #big-quote, #sub-quote, #quote-author, #home-quote-cont .line {display:inline-block; width:100%;}
@@ -59,7 +71,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #gray-cont span {font-size:13px; float:left; width:100%; text-align:center; margin-top:40px; letter-spacing:1.5px;}
 #cta-cont {padding:50px 0;}
 #cta-cont .home-cta {float:left; width:284px; border:2px solid #002157; margin-right:68px; background:#002157; text-align:center;}
-#cta-cont .home-cta:hover {color:#002157;}
+#cta-cont .home-cta:hover, .member-cont .bio-link:hover {color:#002157;}
 #cta-cont .cta-title {float:left; width:100%; padding:58px 0 44px 0; color:#fff; font-size:25px;}
 #cta-cont .cta-link {float:left; width:100%; background:#fff; padding:18px 0 16px 0; font-size:16px;}
 #cta-cont .home-cta:last-child {border-color:#000; background:#000;}
@@ -67,33 +79,41 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #cta-cont .home-cta:nth-child(2) {border-color:#666666; background:#666666;}
 #cta-cont .home-cta:nth-child(2):hover {color:#666;}
 
-/*#info-cont {display:inline-block; margin-top:125px; width:1000px; color:#fff; text-transform:uppercase;}
-#info-cont .overlay {background:#000; opacity:.7; filter:alpha(opacity=70); position:absolute; width:1000px; height:374px; z-index:0; top:346px;}
-#info-cont #big-quote, #info-cont #quote-author, #info-cont #sub-quote, #button-cont {z-index:10; width:1000px; position:absolute;}
-#info-cont #big-quote {font-size:42px; margin-top:35px; line-height:50px; letter-spacing:3px;}
-#info-cont #quote-author {font-size:16px; margin-top:150px;}
-#info-cont #sub-quote {font-size:13px; margin-top:175px;}
-#info-cont .line {width:875px; height:1px; background:#fff; margin-top:225px; position:absolute; margin-left:60px;}
-#button-cont {margin-top:285px;}
-#info-cont #donate-button {background:#d91a22; color:#fff; font-size:26px; padding:22px 18px;}
-#info-cont #donate-button:hover {background:#fff; color:#d91a22;}
-#gray-cont {width:100%; padding-bottom:15px; background:url(../images/star.png) no-repeat  center 25px #e6e7e8; height:125px; float:left; margin-bottom:40px; font-size:13px; color:#000; text-transform:uppercase; text-align:center;}
-#gray-cont a:hover {text-decoration:underline;}
-#gray-cont span {display:inline-block; margin-top:65px;}
-#boxes-cont {float:left; width:100%; padding-bottom:50px;}
-#boxes-cont .box {float:left; width:425px; border:1px solid #000; margin-left:60px; font-size:15px; color:#000; text-align:center;}
-#boxes-cont .box .title {float:left; background:#002157; color:#fff; font-size:25px; padding:15px 0 10px 0; text-transform:uppercase; text-align:center; width:100%;}
-#boxes-cont #contact-box {margin-left:20px;}
-#boxes-cont .box span {font-size:17px; width:100%; float:left; margin-top:10px;}
-#boxes-cont .box a {font-size:14px; color:#d91a22; float:left; width:100%; margin:15px 0 12px 0; }
-#boxes-cont .box a:hover {text-decoration:underline;}
-#overlay {width:100%; height:100%; background:#000; opacity:.7; filter:alpha(opacity=70); display:none; position:absolute; top:0; left:0; z-index:10;}
-#disclaimer-link {float:left; color:#000; width:100%; font-size:13px; color:#e6e7e8; margin-top:30px; text-align:center; cursor:pointer;}
-#disclaimer-link:hover {color:#000;}
-#disclaimer-popup {display:none; width:355px; height:165px; background:#dedede; z-index:100; position:absolute; padding:45px 65px; text-align:center; text-transform:uppercase;}
-#disclaimer-popup #close {position:absolute; top:15px; right:15px; font-family:Arial; cursor:pointer; width:20px; height:20px;}
-#disclaimer-popup span {font-size:10px;}
-#bg-cont, #gray-cont, #boxes-cont {display:none;}*/
+/*ABOUT*/
+#about-cont .text {width:604px;}
+#about-cont #links-cont {float:right; width:340px;}
+#about-cont #links-cont .button {float:right; width:264px; margin-bottom:20px; font-size:19px;}
+#families-cont, #goal-cont, .bio-cont a {color:#002157;}
+#families-cont .page-title, #goal-cont .page-title {border-color:#002157;}
+#families-cont {background:url(../images/stars.png) no-repeat center 65px #002157; margin-top:40px;}
+#families-cont .wrap, #goal-cont .wrap {width:870px; padding:0 65px 45px 65px; float:left;}
+#goal-cont .phase {float:left; width:274px; margin:35px 20px 0 0;}
+#goal-cont .phase .phase-nbr {font-size:18px; color:#fff; background:#002157; float:left; padding:20px 0 16px 18px; width:100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+#goal-cont .phase .phase-title {float:left; margin:16px 0 18px 0; text-transform:none; padding-left:15px; width:100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+#goal-cont .arrows {font-size:25px; float:left; margin-left:15px;}
+#goal-cont #total-goal {color:#fff; font-size:22px; background:#e51b24; display:inline-block; padding:18px 70px; margin:30px 0 30px 190px;}
+#about-quote p {text-align:center; color:#fff; background:#666; text-transform:none; padding:30px 0;}
+#about-quote p strong {font-size:24px; margin-bottom:10px; float:left; width:100%;}
+#hh-info {float:left; width:100%; margin:40px 0 35px 0; color:#000; font-size:12px; text-align:center;}
+
+/*OUR TEAM*/
+.member-cont {float:left; width:314px; height:400px; margin-right:28px;}
+.member-cont .member-photo {height:240px;}
+.member-cont .wrap {background:#002157; color:#fff; font-size:22px; padding:20px 0 15px 0; text-align:center;}
+.member-cont .member-position {font-size:14px; font-style:italic;}
+.member-cont .member-name {max-width:90%; float:none; display:inline-block;}
+.member-cont .bio-link {color:#cb2324; font-size:17px; text-align:center; padding:15px 0 12px; border:2px solid #002157; width:310px; cursor:pointer;}
+.bio-cont {float:none; z-index:100; width:870px !important; position:absolute; left:0; top:0; text-align:left; background:#fff;}
+.bio-cont .wrap {text-align:left; padding-left:50px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.bio-cont .close {cursor:pointer; color:#fff; font-size:28px; position:absolute; right:17px; top:17px; width:28px;}
+.bio-cont .text {padding:28px 40px 45px 50px; max-width:780px; max-height:425px; overflow-y:scroll;}
+.bio-cont .text p {margin-bottom:25px;}
+.bio-cont a {text-transform:none;}
+
+/*OUR SUPPORTERS*/
+.supporter {float:left; border:2px solid #002157; width:226px; height:226px; margin:0 26px 26px 0; background:#002157; color:#fff; text-align:center; font-size:22px;}
+.supporter span {margin-top:90px; display:inline-block; max-width:200px;}
+
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px){
 	#overlay {min-width:768px !important; max-width:1024px !important; width:1000px !important;}
