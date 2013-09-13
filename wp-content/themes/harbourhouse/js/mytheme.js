@@ -2,6 +2,7 @@ $(document).ready(function() {
 	centerItem('#disclaimer-popup',485, 255);
 	showBio();
 	supportersHover();
+	setInputFieldFunctions();
 
 });
 
@@ -31,10 +32,7 @@ function showBio() {
 		$(this).on({
 			click: function() {$('.overlay').fadeIn('slow'); $(this).siblings('.bio-cont').fadeIn('slow');}
 		});
-	});
-	
-	
-	
+	});	
 }
 
 function closeBio() {
@@ -46,6 +44,16 @@ function supportersHover() {
 		$(this).on({
 			mouseenter: function() {$(this).children('.supporter-name').hide(); $(this).children('.supporter-logo').show();},
 			mouseleave: function() {$(this).children('.supporter-name').show(); $(this).children('.supporter-logo').hide();}
+		});
+	});
+}
+
+function setInputFieldFunctions(){
+	$('input, textarea').each(function(){
+	    var $this = $(this);
+	    $this.data('placeholder', $this.attr('placeholder'))
+	         .focus(function(){$this.removeAttr('placeholder');})
+	         .blur(function(){$this.attr('placeholder', $this.data('placeholder'));
 		});
 	});
 }

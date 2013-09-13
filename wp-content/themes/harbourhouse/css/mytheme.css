@@ -10,15 +10,15 @@ img {max-width:100%;}
 input, select, textarea {-webkit-appearance:none; -webkit-border-radius:0px;}
 input[type="checkbox"] {-webkit-appearance:checkbox;}
 input[type="radio"] {-webkit-appearance:radio;}
-input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0;}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appearance: none; margin: 0;}*/
 ::-webkit-input-placeholder {color: #000; opacity:1; filter:alpha(opacity=100);}
 :-moz-placeholder {color: #000; opacity:1; filter:alpha(opacity=100);}
 ::-moz-placeholder {color: #000; opacity:1; filter:alpha(opacity=100);}
-:-ms-input-placeholder {color: #000; opacity:1; filter:alpha(opacity=100);
-*/
+:-ms-input-placeholder {color: #000; opacity:1; filter:alpha(opacity=100);}
+
 .last, #header #nav li:last-child, #cta-cont .home-cta:last-child, .member-cont:nth-child(3n+4), .supporter:nth-child(4n+4) {margin-right:0 !important;}
-.button {text-transform:uppercase; color:#fff; font-size:15px; background:#cb2324; border:3px solid #cb2324; padding:18px 35px; text-align:center;}
-.button:hover {background:#fff; color:#cb2324;}
+.button, #contact-info a {text-transform:uppercase; color:#fff; font-size:15px; background:#cb2324; border:3px solid #cb2324; padding:18px 35px; text-align:center;}
+.button:hover, #contact-info a:hover {background:#fff; color:#cb2324;}
 #header, #footer, #main-wrap, #gray-cont, #cta-cont, .container, .text, #families-cont .gray, .member-cont div, #supporters-cont {float:left; width:100%;}
 #banner {position:absolute; top:100px; left:0; width:100%; height:269px;}
 #main-wrap {margin-top:269px;}
@@ -26,13 +26,14 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 .gray {background:#e6e7e8;}
 .hidden {display:none;}
 .overlay {position:absolute; top:0; left:0; background:#000; opacity:.7; filter:alpha(opacity=70); z-index:10;}
+.line {float:left; width:100%; background:#000; height:1px; margin:25px 0 40px 0;}
 
 /*FONTS*/
 .brandon-light-italic, #sub-quote {font-family: "brandon-grotesque",sans-serif; font-style: italic; font-weight: 100; letter-spacing:0.5px;}
-.brandon-regular {font-family: "brandon-grotesque",sans-serif; font-style: normal; font-weight: 400; letter-spacing:3px;}
+.brandon-regular, #contact-form input[type="text"], #contact-form textarea {font-family: "brandon-grotesque",sans-serif; font-style: normal; font-weight: 400; letter-spacing:3px;}
 .brandon-bold, #header #nav li a, #big-quote, #donate-button, .button, #gray-cont span, #cta-cont .cta-link, #news-link, .page-title, .phase-nbr, .arrows, #about-quote p strong, #hh-info,
-.member-cont .info-cont, .bio-link, .bio-cont a, .supporter  {font-family: "brandon-grotesque",sans-serif; font-style: normal; font-weight: 700; letter-spacing:3px; text-transform:uppercase;}
-.brandon-black, #header #donate-btn, #cta-cont .cta-title, #total-goal {font-family: "brandon-grotesque",sans-serif; font-style: normal; font-weight: 900; letter-spacing:3px; text-transform:uppercase;}
+.member-cont .info-cont, .bio-link, .bio-cont a, .supporter, #contact-info  {font-family: "brandon-grotesque",sans-serif; font-style: normal; font-weight: 700; letter-spacing:3px; text-transform:uppercase;}
+.brandon-black, #header #donate-btn, #cta-cont .cta-title, #total-goal, #contact-info strong, .gray-btn {font-family: "brandon-grotesque",sans-serif; font-style: normal; font-weight: 900; letter-spacing:3px; text-transform:uppercase;}
 .brandon-medium, #quote-author, #gray-cont, #footer #copyright, #goal-cont .phase .phase-title, #about-quote p, .member-cont .member-position {font-family: "brandon-grotesque",sans-serif; font-style: normal; font-weight: 500; letter-spacing:2px; text-transform:uppercase;}
 
 /*HEADER*/
@@ -114,6 +115,22 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 .supporter {float:left; border:2px solid #002157; width:226px; height:226px; margin:0 26px 26px 0; background:#002157; color:#fff; text-align:center; font-size:22px;}
 .supporter span {margin-top:90px; display:inline-block; max-width:200px;}
 
+/*CONTACT*/
+#contact-info {float:left; width:455px; margin-top:15px; font-size:22px; line-height:38px;}
+#contact-info strong {font-size:30px; color:#2e3192;  float:left; width:100%; margin-bottom:10px;}
+#contact-info p, #contact-form {float:left; width:100%; margin-bottom:25px;}
+#contact-info a {padding:18px 22px;}
+#contact-img {float:right; width:500px; margin-top:15px;}
+.gray-btn {font-size:17px; color:#fff; background:#666; padding:20px 30px; float:left;}
+#contact-form input[type="text"], #contact-form textarea {float:left; height:60px; padding:0 20px 0 20px; background:#e6e7e8; border:none; width:450px; margin-top:20px; font-size:13px; text-transform:uppercase;}
+#contact-form input[type="text"]:first-child {margin-right:20px;}
+#contact-form textarea {resize:none; width:960px; height:185px; padding-top:25px;}
+#contact-form input[type="submit"] {padding:15px 35px; float:left; margin-top:20px; cursor:pointer;}
+#contact-form .error {color:red; position:absolute; right:0; margin-top:-40px;}
+
+/*BLOG*/
+article {float:left; width:100%; padding:40px 0; border-top:1px solid #000;}
+#blog-cont #cat-cont {margin-top:22px;}
 
 @media only screen and (min-device-width:768px) and (max-device-width:1024px){
 	#overlay {min-width:768px !important; max-width:1024px !important; width:1000px !important;}

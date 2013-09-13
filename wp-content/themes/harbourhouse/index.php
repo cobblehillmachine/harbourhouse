@@ -14,9 +14,14 @@
 
 get_header(); ?>
 
-		<div id="primary">
-			<div id="content" role="main">
-
+<div id="blog-cont" class="container">
+	<div class="mid-cont">
+		<div id="cat-cont" class="container">
+			<div class="cat-dd">
+				<div class="sort-title" >SORT BY</div>
+				<ul class="categories"><?php $categories = wp_list_categories(array( 'orderby' => 'ID', 'order' => 'ASC', 'show_option_all' => 'VIEW ALL')); echo $categories; ?></u>
+			</div>
+		</div>
 			<?php if ( have_posts() ) : ?>
 
 				<?php twentyeleven_content_nav( 'nav-above' ); ?>
@@ -45,8 +50,7 @@ get_header(); ?>
 
 			<?php endif; ?>
 
-			</div><!-- #content -->
-		</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
+	
+		</div>
+</div>
 <?php get_footer(); ?>
