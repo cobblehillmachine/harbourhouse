@@ -419,7 +419,7 @@ function wp_list_categories( $args = '' ) {
 		'feed' => '', 'feed_type' => '',
 		'feed_image' => '', 'exclude' => '',
 		'exclude_tree' => '', 'current_category' => 0,
-		'hierarchical' => true, 'title_li' => __( 'Categories' ),
+		'hierarchical' => true, 'title_li' => __( '' ),
 		'echo' => 1, 'depth' => 0,
 		'taxonomy' => 'category'
 	);

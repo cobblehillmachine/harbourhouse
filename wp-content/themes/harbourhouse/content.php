@@ -10,7 +10,7 @@
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	
-			<h1 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+			<h1 class="entry-title"><?php the_title(); ?></h1>
 
 			<?php if ( 'post' == get_post_type() ) : ?>
 			<div class="entry-meta">

@@ -420,9 +420,8 @@ function twentyeleven_content_nav( $html_id ) {
 
 	if ( $wp_query->max_num_pages > 1 ) : ?>
 		<nav id="<?php echo esc_attr( $html_id ); ?>">
-			<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentyeleven' ); ?></h3>
-			<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twentyeleven' ) ); ?></div>
-			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) ); ?></div>
+			<div class="nav-previous"><?php next_posts_link( __( 'Older posts', 'twentyeleven' ) ); ?></div>
+			<div class="nav-next"><?php previous_posts_link( __( 'Newer posts', 'twentyeleven' ) ); ?></div>
 		</nav><!-- #nav-above -->
 	<?php endif;
 }
@@ -677,12 +676,47 @@ function create_post_type() {
 		'rewrite' => array('slug' => ''),
 		'supports' => array( 'title', 'thumbnail' )
 	);
+	
+	$args3 = array(
+		'labels' => array(
+			'name' => __( 'Events' ),
+			'singular_name' => __( 'Event' )
+		),
+		'public' => true,
+		//'has_archive' => true,
+		'rewrite' => array('slug' => 'events'),
+		'supports' => array( 'title', 'editor', 'thumbnail' )
+	);
   
   	register_post_type( 'Home CTAs', $args1);
 	register_post_type( 'Supporters', $args2);
+	register_post_type( 'Events', $args3);
 	//register_taxonomy_for_object_type('post_tag', 'offerings');
-	//register_taxonomy_for_object_type('category', 'recipes');
+	register_taxonomy_for_object_type('category', 'events');
 
 	// register_taxonomy_for_object_type('post_tag', 'page');
 	//register_taxonomy_for_object_type('category', 'page');
+}
+
+global $wp_query;  
+  
+$total_pages = $wp_query->max_num_pages;  
+  
+if ($total_pages > 1){  
+  
+  $current_page = max(1, get_query_var('paged'));  
+    
+  echo '<div class="page_nav">';  
+    
+  echo paginate_links(array(  
+      'base' => get_pagenum_link(1) . '%_%',  
+      'format' => '/page/%#%',  
+      'current' => $current_page,  
+      'total' => $total_pages,  
+      'prev_text' => 'Prev',  
+      'next_text' => 'Next'  
+    ));  
+  
+  echo '</div>';  
+    
 }

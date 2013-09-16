@@ -3,6 +3,10 @@ $(document).ready(function() {
 	showBio();
 	supportersHover();
 	setInputFieldFunctions();
+	showCategories();
+	$('#tribe-events-content h2').addClass('page-title');
+	$('#tribe-events').addClass('mid-cont');
+	sortEvents();
 
 });
 
@@ -11,7 +15,9 @@ $(window).resize(function() {
 
 });
 
-
+$(document).click(function() {
+	$('#cat-cont .categories').fadeOut();
+});
 
 function centerItem(item,iWidth,iHeight){  
    windowWidth = $(window).width();
@@ -55,5 +61,20 @@ function setInputFieldFunctions(){
 	         .focus(function(){$this.removeAttr('placeholder');})
 	         .blur(function(){$this.attr('placeholder', $this.data('placeholder'));
 		});
+	});
+}
+
+function showCategories() {
+	$('#cat-cont #sort-title').on({
+		click: function(e) {$('#cat-cont .categories').slideToggle();e.stopPropagation();}
+	});
+}
+
+function sortEvents() {
+	$('#upcoming-events .sort-events').on({
+		click: function() {$('#upcoming-events').hide(); $('#past-events').fadeIn();}
+	});
+	$('#past-events .sort-events').on({
+		click: function() {$('#past-events').hide(); $('#upcoming-events').fadeIn();}
 	});
 }
