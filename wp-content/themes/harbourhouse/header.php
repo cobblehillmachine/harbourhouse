@@ -89,7 +89,7 @@
 				<div id="nav">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 				</div>
-				<a id="donate-btn" href="http://">DONATE</a>
+				<a id="donate-btn" href="https://app.etapestry.com/onlineforms/CharlestonHarbourHouse/CHHDONATIONS.html">DONATE</a>
 			</div>
 		</div>
 		<div id="main-wrap">

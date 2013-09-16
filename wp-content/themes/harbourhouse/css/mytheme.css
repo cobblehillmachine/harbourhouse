@@ -170,6 +170,7 @@ article .entry-content img {max-width:100%; height:auto;}
 	#banner, .overlay {width:1280px !important;}
 }
 
-@media only screen and (min-device-width : 321px) {
+/*@media only screen and (min-device-width : 321px) {
 	#banner, .overlay {width:1280px !important;}
 }
+*/
