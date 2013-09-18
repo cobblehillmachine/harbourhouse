@@ -1,4 +1,4 @@
-body {margin:0; padding:0; width:100%; min-width:1280px; border-top:14px solid #002157; font:normal 18px "brandon-grotesque"; letter-spacing:1px; line-height:25px;}
+body {margin:0; padding:0; width:100%; min-width:1280px; font:normal 18px "brandon-grotesque"; letter-spacing:1px; line-height:25px;}
 a {text-decoration:none; color:#c80101; outline:0;}
 a img {border:0;}
 ul {list-style:none; padding:0; margin:0;}
@@ -37,7 +37,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 .brandon-medium, #quote-author, #gray-cont, #footer #copyright, #goal-cont .phase .phase-title, #about-quote p, .member-cont .member-position, #pagination .page-numbers {font-family: "brandon-grotesque",sans-serif; font-style: normal; font-weight: 500; letter-spacing:1.5px; text-transform:uppercase;}
 
 /*HEADER*/
-#header {background:#fff; padding-bottom:28px;}
+#header {background:#fff; padding-bottom:28px; border-top:14px solid #002157;}
 #header #nav {float:left; width:100%; margin:30px 0 0 100px;}
 #header #nav li {float:left; margin-right:65px;}
 #header #nav li:nth-child(2) {margin-right:325px;}
@@ -45,13 +45,14 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #header #nav li a:hover {color:#000;}
 #header #nav .current-menu-item a, #header #nav .current-page-ancestor a, #header #nav .current_page_parent a {border-bottom:4px solid #000; color:#000;}
 #logo {position:absolute; width:217px; height:215px; background:url(../images/logo2.jpg) no-repeat; margin-left:375px; left:0; height:196px;}
-#header #donate-btn {position:absolute; right:0; top:0; background:#002157; color:#fff; padding:0px 25px 10px 25px; margin-right:-60px; font-size:14px;}
+#header #donate-btn {position:absolute; right:0; top:-1px; background:#002157; color:#fff; padding:0px 25px 10px 25px; margin-right:-60px; font-size:14px;}
 #header #donate-btn:hover {color:#666;}
 
 /*FOOTER*/
-#footer {background:#e6e7e8; padding-top:40px; min-height:50px;}
+#footer {background:#e6e7e8; padding-top:32px; min-height:50px;}
 #footer #copyright {float:left; font-size:13px;}
 #footer #news-link {font-size:14px; color:#666; float:right;}
+#footer #news-link:hover {color:#000;}
 #footer #facebook {float:right; width:25px; height:22px; background:url(../images/facebook.png) no-repeat; margin-left:60px; margin-top:-4px;}
 #footer #facebook:hover {background-position:0 -22px;}
 
@@ -89,7 +90,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #families-cont {background:url(../images/stars.png) no-repeat center 65px #002157; margin-top:40px;}
 #families-cont .wrap, #goal-cont .wrap {width:870px; padding:0 65px 45px 65px; float:left;}
 #goal-cont .phase {float:left; width:274px; margin:35px 20px 0 0;}
-#goal-cont .phase .phase-nbr {font-size:18px; color:#fff; background:#002157; float:left; padding:20px 0 16px 18px; width:100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+#goal-cont .phase .phase-nbr {font-size:18px; color:#fff; background:#002157; float:left; padding:20px 0 16px 17px; width:100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 #goal-cont .phase .phase-title {float:left; margin:16px 0 18px 0; text-transform:none; padding-left:15px; width:100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-weight:bold;}
 #goal-cont .arrows {font-size:25px; float:left; margin-left:15px;}
 #goal-cont #total-goal {color:#fff; font-size:22px; background:#e51b24; display:inline-block; padding:18px 70px; margin:30px 0 0 190px;}
@@ -98,22 +99,23 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #hh-info {float:left; width:100%; margin:40px 0 35px 0; color:#000; font-size:11px; text-align:center; letter-spacing:2px;}
 
 /*OUR TEAM*/
-.member-cont {float:left; width:314px; height:400px; margin-right:28px; cursor:pointer;}
+.member-cont {float:left; width:314px; height:400px; margin-right:28px; cursor:pointer; margin-bottom:20px;}
 .member-cont .member-photo {height:240px;}
-.member-cont .wrap {background:#002157; color:#fff; font-size:20px; padding:20px 0 15px 0; text-align:center;}
+.member-cont .wrap {background:#002157; color:#fff; font-size:20px; padding:15px 0 10px 0; text-align:center; height:65px;}
 .member-cont .member-position {font-size:14px; font-style:italic;}
 .member-cont .member-name {max-width:90%; float:none; display:inline-block;}
-.member-cont .bio-link {color:#cb2324; font-size:17px; text-align:center; padding:15px 0 12px; border:2px solid #002157; width:310px; }
+.member-cont .bio-link {color:#cb2324; font-size:17px; text-align:center; padding:10px 0 8px; border:2px solid #002157; width:310px; }
 .bio-cont {float:none; z-index:100; width:870px !important; position:absolute; left:64px; text-align:left; background:#fff;}
 .bio-cont .wrap {text-align:left; padding-left:50px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 .bio-cont .close {cursor:pointer; color:#fff; font-size:28px; position:absolute; right:17px; top:17px; width:28px;}
-.bio-cont .text {padding:28px 40px 45px 50px; max-width:780px; max-height:425px; overflow-y:scroll;}
+.bio-cont .text {padding:28px 40px 45px 50px; max-width:780px; max-height:425px; overflow-y:scroll; -webkit-overflow-scrolling: touch;}
 .bio-cont .text p {margin-bottom:25px;}
 .bio-cont a {text-transform:none;}
 
 /*OUR SUPPORTERS*/
 .supporter {float:left; border:2px solid #002157; width:226px; height:226px; margin:0 26px 26px 0; background:#002157; color:#fff; text-align:center; font-size:22px;}
-.supporter span {margin-top:90px; display:inline-block; max-width:200px;}
+.supporter .supporter-name {height:226px; width:226px; display:table-cell; vertical-align:middle;}
+.supporter .supporter-name span {max-width:200px; display:inline-block;}
 
 /*CONTACT*/
 #contact-info {float:left; width:455px; margin-top:15px; font-size:22px; line-height:38px;}
