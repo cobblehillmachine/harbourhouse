@@ -89,7 +89,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #families-cont .page-title, #goal-cont .page-title {border-color:#002157;}
 #families-cont {background:url(../images/stars.png) no-repeat center 65px #002157; margin-top:40px;}
 #families-cont .wrap, #goal-cont .wrap {width:870px; padding:0 65px 45px 65px; float:left;}
-#goal-cont .phase {float:left; width:274px; margin:35px 20px 0 0;}
+#goal-cont .phase {float:left; width:276px; margin:35px 20px 0 0;}
 #goal-cont .phase .phase-nbr {font-size:18px; color:#fff; background:#002157; float:left; padding:20px 0 16px 17px; width:100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 #goal-cont .phase .phase-title {float:left; margin:16px 0 18px 0; text-transform:none; padding-left:15px; width:100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-weight:bold;}
 #goal-cont .arrows {font-size:25px; float:left; margin-left:15px;}
@@ -103,10 +103,10 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 .member-cont .member-photo {height:240px;}
 .member-cont .wrap {background:#002157; color:#fff; font-size:20px; padding:15px 0 10px 0; text-align:center; height:65px;}
 .member-cont .member-position {font-size:14px; font-style:italic;}
-.member-cont .member-name {max-width:90%; float:none; display:inline-block;}
+.member-cont .member-name {max-width:90%; float:none; display:inline-block; font-weight:bold; letter-spacing:2.5px;}
 .member-cont .bio-link {color:#cb2324; font-size:17px; text-align:center; padding:10px 0 8px; border:2px solid #002157; width:310px; }
 .bio-cont {float:none; z-index:100; width:870px !important; position:absolute; left:64px; text-align:left; background:#fff;}
-.bio-cont .wrap {text-align:left; padding-left:50px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+.bio-cont .wrap {text-align:left; padding-left:50px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; height:72px;}
 .bio-cont .close {cursor:pointer; color:#fff; font-size:28px; position:absolute; right:17px; top:17px; width:28px;}
 .bio-cont .text {padding:28px 40px 45px 50px; max-width:780px; max-height:425px; overflow-y:scroll; -webkit-overflow-scrolling: touch;}
 .bio-cont .text p {margin-bottom:25px;}
@@ -119,19 +119,19 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 
 /*CONTACT*/
 #contact-info {float:left; width:455px; margin-top:15px; font-size:22px; line-height:38px;}
-#contact-info strong {font-size:30px; color:#2e3192;  float:left; width:100%; margin-bottom:10px;}
-#contact-info p, #contact-form {float:left; width:100%; margin-bottom:25px;}
-#contact-info a {padding:18px 22px;}
+#contact-info strong {font-size:30px; color:#2e3192;  float:left; width:100%; margin-bottom:15px;}
+#contact-info p, #contact-form {float:left; width:100%; margin-bottom:15px;}
+#contact-info a {padding:18px 22px; float:left; margin-top:10px;}
 #contact-img {float:right; width:500px; margin-top:15px;}
 .gray-btn {font-size:17px; color:#fff; background:#666; padding:20px 30px; float:left;}
 #contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {float:left; height:60px; padding:0 20px 0 20px; background:#e6e7e8; border:none; width:450px; margin-top:20px; font-size:13px; text-transform:uppercase;}
 #contact-form input[type="text"]:first-child {margin-right:20px;}
 #contact-form textarea {resize:none; width:960px; height:185px; padding-top:25px;}
-#contact-form input[type="submit"] {padding:15px 35px; float:left; margin-top:20px; cursor:pointer;}
+#contact-form input[type="submit"] {padding:15px 35px; float:left; margin-top:20px; cursor:pointer; font-weight:bold; letter-spacing:2px;}
 #contact-form .error {color:red; position:absolute; right:0; margin-top:-40px;}
 #contact-form .wpcf7-not-valid-tip {display:none !important;}
 #contact-form div.wpcf7-validation-errors, #contact-form div.wpcf7-mail-sent-ok {border:none; float:left; margin:10px 0 0 25px; padding:0; color:#cb2324;}
-#contact-form div.wpcf7-mail-sent-ok {color:green !important;}
+#contact-form div.wpcf7-mail-sent-ok {color:#2E3192 !important;}
 
 /*BLOG*/
 #blog-cont #cat-cont {margin-top:22px; float:right; width:250px; margin-bottom:15px;}

@@ -19,7 +19,7 @@ get_header(); ?>
 		<div id="cat-cont" class="container">
 			<div class="cat-dd">
 				<div id="sort-title" class="button" >SORT BY</div>
-				<ul class="categories"><?php $categories = wp_list_categories('exclude=1, 6, 7'); echo $categories; ?></ul>
+				<ul class="categories"><?php $categories = wp_list_categories(array('exclude'=> '1, 6, 7', 'show_option_all' => 'VIEW ALL')); echo $categories; ?></ul>
 			</div>
 		</div>
 			<?php if ( have_posts() ) : ?>
