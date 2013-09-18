@@ -34,7 +34,7 @@ function showBio() {
 	var winH = $(document).height();
 	var winW = $(window).width();
 	$('.overlay').css({'height': winH, 'width': winW});
-	$('.member-cont .bio-link').each(function() {
+	$('.member-photo, .info-cont, .bio-link').each(function() {
 		$(this).on({
 			click: function() {$('.overlay').fadeIn('slow'); $(this).siblings('.bio-cont').fadeIn('slow');}
 		});
@@ -65,8 +65,9 @@ function setInputFieldFunctions(){
 }
 
 function showCategories() {
-	$('#cat-cont #sort-title').on({
-		click: function(e) {$('#cat-cont .categories').slideToggle();e.stopPropagation();}
+	$('#cat-cont .cat-dd').on({
+		mouseenter: function() {$('#cat-cont .categories').animate({height:'toggle'});},
+		mouseleave: function() {$('#cat-cont .categories').animate({height:'toggle'});}
 	});
 }
 

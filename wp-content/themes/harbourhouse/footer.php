@@ -16,7 +16,7 @@
 			<div class="mid-cont">
 				<div id="copyright">&copy; 2013 harbour house of charleston</div>
 				<a id="facebook" href="https://www.facebook.com/CharlestonHarbourHouse" target="_blank"></a>
-				<a id="news-link" href="#" target="_blank">subscribe to newsletter</a>
+				<a id="news-link" href="http://eepurl.com/Fqp9P" target="_blank">subscribe to newsletter</a>
 			</div>
 			
 		</div> 

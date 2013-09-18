@@ -8,7 +8,7 @@
 				<div class="line"></div>
 				<div class="gray-btn">leave a message</div>
 				<div id="contact-form">
-					<?php echo do_shortcode('[bestwebsoft_contact_form]'); ?>
+					<?php echo do_shortcode('[contact-form-7 id="122" title="Contact form 1"]'); ?>
 				</div>
 			<?php endwhile; ?>	
 

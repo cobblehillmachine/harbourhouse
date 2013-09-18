@@ -1,5 +1,5 @@
 body {margin:0; padding:0; width:100%; min-width:1280px; border-top:14px solid #002157; font:normal 18px "brandon-grotesque"; letter-spacing:1px; line-height:25px;}
-a {text-decoration:none; color:#c80101;}
+a {text-decoration:none; color:#c80101; outline:0;}
 a img {border:0;}
 ul {list-style:none; padding:0; margin:0;}
 input {-webkit-appearance:none;}
@@ -17,7 +17,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 :-ms-input-placeholder {color: #000; opacity:1; filter:alpha(opacity=100);}
 
 .last, #header #nav li:last-child, #cta-cont .home-cta:last-child, .member-cont:nth-child(3n+4), .supporter:nth-child(4n+4) {margin-right:0 !important;}
-.button, #contact-info a {text-transform:uppercase; color:#fff; font-size:15px; background:#cb2324; border:3px solid #cb2324; padding:18px 35px; text-align:center; cursor:pointer;}
+.button, #contact-info a, #contact-form input[type="submit"] {text-transform:uppercase; color:#fff; font-size:15px; background:#cb2324; border:3px solid #cb2324; padding:18px 35px; text-align:center; cursor:pointer;}
 .button:hover, #contact-info a:hover {background:#fff; color:#cb2324;}
 #header, #footer, #main-wrap, #gray-cont, #cta-cont, .container, .text, #families-cont .gray, .member-cont div, #supporters-cont, .event-cont .text, #upcoming-events, #past-events {float:left; width:100%;}
 #banner {position:absolute; top:100px; left:0; width:100%; height:269px;}
@@ -30,22 +30,22 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 
 /*FONTS*/
 .brandon-light-italic, #sub-quote {font-family: "brandon-grotesque",sans-serif; font-style: italic; font-weight: 100; letter-spacing:0.5px;}
-.brandon-regular, #contact-form input[type="text"], #contact-form textarea {font-family: "brandon-grotesque",sans-serif; font-style: normal; font-weight: 400; letter-spacing:3px;}
+.brandon-regular, #contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {font-family: "brandon-grotesque",sans-serif; font-style: normal; font-weight: 400; letter-spacing:3px;}
 .brandon-bold, #header #nav li a, #big-quote, #donate-button, .button, #gray-cont span, #cta-cont .cta-link, #news-link, .page-title, .phase-nbr, .arrows, #about-quote p strong, #hh-info,
 .member-cont .info-cont, .bio-link, .bio-cont a, .supporter, #contact-info, article .entry-meta time, article .cat-links, .event-cont .event-date  {font-family: "brandon-grotesque",sans-serif; font-style: normal; font-weight: 700 !important; letter-spacing:3px; text-transform:uppercase;}
 .brandon-black, #header #donate-btn, #cta-cont .cta-title, #total-goal, #contact-info strong, .gray-btn, #blog-cont article h1, .event-cont .event-title {font-family: "brandon-grotesque",sans-serif; font-style: normal; font-weight: 900; letter-spacing:3px; text-transform:uppercase;}
-.brandon-medium, #quote-author, #gray-cont, #footer #copyright, #goal-cont .phase .phase-title, #about-quote p, .member-cont .member-position, #pagination .page-numbers {font-family: "brandon-grotesque",sans-serif; font-style: normal; font-weight: 500; letter-spacing:2px; text-transform:uppercase;}
+.brandon-medium, #quote-author, #gray-cont, #footer #copyright, #goal-cont .phase .phase-title, #about-quote p, .member-cont .member-position, #pagination .page-numbers {font-family: "brandon-grotesque",sans-serif; font-style: normal; font-weight: 500; letter-spacing:1.5px; text-transform:uppercase;}
 
 /*HEADER*/
 #header {background:#fff; padding-bottom:28px;}
-#header #nav {float:left; width:100%; margin:30px 0 0 112px;}
+#header #nav {float:left; width:100%; margin:30px 0 0 100px;}
 #header #nav li {float:left; margin-right:65px;}
-#header #nav li:nth-child(2) {margin-right:340px;}
+#header #nav li:nth-child(2) {margin-right:325px;}
 #header #nav li a {font-size:18px;}
 #header #nav li a:hover {color:#000;}
 #header #nav .current-menu-item a, #header #nav .current-page-ancestor a, #header #nav .current_page_parent a {border-bottom:4px solid #000; color:#000;}
-#logo {position:absolute; width:217px; height:215px; background:url(../images/logo2.jpg) no-repeat; margin-left:375px; left:0;}
-#header #donate-btn {position:absolute; right:0; top:0; background:#002157; color:#fff; padding:2px 25px 12px 25px; margin-right:-100px;}
+#logo {position:absolute; width:217px; height:215px; background:url(../images/logo2.jpg) no-repeat; margin-left:375px; left:0; height:196px;}
+#header #donate-btn {position:absolute; right:0; top:0; background:#002157; color:#fff; padding:0px 25px 10px 25px; margin-right:-60px; font-size:14px;}
 #header #donate-btn:hover {color:#666;}
 
 /*FOOTER*/
@@ -90,21 +90,21 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #families-cont .wrap, #goal-cont .wrap {width:870px; padding:0 65px 45px 65px; float:left;}
 #goal-cont .phase {float:left; width:274px; margin:35px 20px 0 0;}
 #goal-cont .phase .phase-nbr {font-size:18px; color:#fff; background:#002157; float:left; padding:20px 0 16px 18px; width:100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
-#goal-cont .phase .phase-title {float:left; margin:16px 0 18px 0; text-transform:none; padding-left:15px; width:100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+#goal-cont .phase .phase-title {float:left; margin:16px 0 18px 0; text-transform:none; padding-left:15px; width:100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; font-weight:bold;}
 #goal-cont .arrows {font-size:25px; float:left; margin-left:15px;}
-#goal-cont #total-goal {color:#fff; font-size:22px; background:#e51b24; display:inline-block; padding:18px 70px; margin:30px 0 30px 190px;}
+#goal-cont #total-goal {color:#fff; font-size:22px; background:#e51b24; display:inline-block; padding:18px 70px; margin:30px 0 0 190px;}
 #about-quote p {text-align:center; color:#fff; background:#666; text-transform:none; padding:30px 0;}
 #about-quote p strong {font-size:24px; margin-bottom:10px; float:left; width:100%;}
-#hh-info {float:left; width:100%; margin:40px 0 35px 0; color:#000; font-size:12px; text-align:center;}
+#hh-info {float:left; width:100%; margin:40px 0 35px 0; color:#000; font-size:11px; text-align:center; letter-spacing:2px;}
 
 /*OUR TEAM*/
-.member-cont {float:left; width:314px; height:400px; margin-right:28px;}
+.member-cont {float:left; width:314px; height:400px; margin-right:28px; cursor:pointer;}
 .member-cont .member-photo {height:240px;}
 .member-cont .wrap {background:#002157; color:#fff; font-size:20px; padding:20px 0 15px 0; text-align:center;}
 .member-cont .member-position {font-size:14px; font-style:italic;}
 .member-cont .member-name {max-width:90%; float:none; display:inline-block;}
-.member-cont .bio-link {color:#cb2324; font-size:17px; text-align:center; padding:15px 0 12px; border:2px solid #002157; width:310px; cursor:pointer;}
-.bio-cont {float:none; z-index:100; width:870px !important; position:absolute; left:64px; top:0; text-align:left; background:#fff;}
+.member-cont .bio-link {color:#cb2324; font-size:17px; text-align:center; padding:15px 0 12px; border:2px solid #002157; width:310px; }
+.bio-cont {float:none; z-index:100; width:870px !important; position:absolute; left:64px; text-align:left; background:#fff;}
 .bio-cont .wrap {text-align:left; padding-left:50px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 .bio-cont .close {cursor:pointer; color:#fff; font-size:28px; position:absolute; right:17px; top:17px; width:28px;}
 .bio-cont .text {padding:28px 40px 45px 50px; max-width:780px; max-height:425px; overflow-y:scroll;}
@@ -122,11 +122,14 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 #contact-info a {padding:18px 22px;}
 #contact-img {float:right; width:500px; margin-top:15px;}
 .gray-btn {font-size:17px; color:#fff; background:#666; padding:20px 30px; float:left;}
-#contact-form input[type="text"], #contact-form textarea {float:left; height:60px; padding:0 20px 0 20px; background:#e6e7e8; border:none; width:450px; margin-top:20px; font-size:13px; text-transform:uppercase;}
+#contact-form input[type="text"], #contact-form input[type="email"], #contact-form textarea {float:left; height:60px; padding:0 20px 0 20px; background:#e6e7e8; border:none; width:450px; margin-top:20px; font-size:13px; text-transform:uppercase;}
 #contact-form input[type="text"]:first-child {margin-right:20px;}
 #contact-form textarea {resize:none; width:960px; height:185px; padding-top:25px;}
 #contact-form input[type="submit"] {padding:15px 35px; float:left; margin-top:20px; cursor:pointer;}
 #contact-form .error {color:red; position:absolute; right:0; margin-top:-40px;}
+#contact-form .wpcf7-not-valid-tip {display:none !important;}
+#contact-form div.wpcf7-validation-errors, #contact-form div.wpcf7-mail-sent-ok {border:none; float:left; margin:10px 0 0 25px; padding:0; color:#cb2324;}
+#contact-form div.wpcf7-mail-sent-ok {color:green !important;}
 
 /*BLOG*/
 #blog-cont #cat-cont {margin-top:22px; float:right; width:250px; margin-bottom:15px;}
@@ -151,7 +154,7 @@ article .entry-content img {max-width:100%; height:auto;}
 .event-cont .event-img {float:left; width:490px;  background:#e6e7e8;}
 .event-cont .event-img img {float:left; width:412px; height:305px;}
 .event-cont .event-title {font-size:30px; float:left; width:100%; line-height:34px; }
-.event-cont .event-date {font-size:18px; float:left; width:100%; line-height:26px; margin:7px 0;}
+.event-cont .event-date {font-size:16px; float:left; width:100%; line-height:26px; margin:7px 0;}
 .event-cont .button {float:left; margin-top:15px; padding:10px 30px;}
 .sort-events {position:absolute; right:0; padding:7px 30px; top:25px;}
 
