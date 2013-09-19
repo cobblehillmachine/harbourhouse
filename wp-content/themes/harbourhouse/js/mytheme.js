@@ -12,6 +12,7 @@ $(document).ready(function() {
 
 $(window).resize(function() {
 	centerItem('#disclaimer-popup',485, 255);
+	showBio();
 
 });
 
