@@ -1,5 +1,5 @@
 $(document).ready(function() {
-	centerItem('#disclaimer-popup',485, 255);
+	centerItem('.bio-cont',870, 475);
 	showBio();
 	supportersHover();
 	setInputFieldFunctions();
@@ -11,7 +11,7 @@ $(document).ready(function() {
 });
 
 $(window).resize(function() {
-	centerItem('#disclaimer-popup',485, 255);
+	centerItem('.bio-cont',870, 475);
 	showBio();
 
 });
@@ -24,10 +24,10 @@ function centerItem(item,iWidth,iHeight){
    windowWidth = $(window).width();
    windowHeight = $(document).height();
    var w = windowWidth - iWidth; 
-   var h = windowHeight - iHeight;
+   var h = windowHeight - iHeight ;
    $(item).css({
        'left': w/2,
-       'top':h/2
+       'top':(h/2) -311
    });   
 }
 
