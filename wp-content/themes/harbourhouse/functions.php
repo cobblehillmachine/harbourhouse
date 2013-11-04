@@ -693,6 +693,7 @@ function create_post_type() {
 	register_post_type( 'Events', $args3);
 	//register_taxonomy_for_object_type('post_tag', 'offerings');
 	register_taxonomy_for_object_type('category', 'events');
+	register_taxonomy_for_object_type('category', 'supporters');
 
 	// register_taxonomy_for_object_type('post_tag', 'page');
 	//register_taxonomy_for_object_type('category', 'page');
