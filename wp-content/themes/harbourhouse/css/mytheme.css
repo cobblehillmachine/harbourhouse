@@ -1,5 +1,5 @@
 body {margin:0; padding:0; width:100%; min-width:1280px; font:normal 18px "brandon-grotesque"; letter-spacing:1px; line-height:25px;}
-a {text-decoration:none; color:#c80101; outline:0;}
+a, .supporter-small:hover {text-decoration:none; color:#c80101; outline:0;}
 a img {border:0;}
 ul {list-style:none; padding:0; margin:0;}
 input {-webkit-appearance:none;}
@@ -16,10 +16,10 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 ::-moz-placeholder {color: #000; opacity:1; filter:alpha(opacity=100);}
 :-ms-input-placeholder {color: #000; opacity:1; filter:alpha(opacity=100);}
 
-.last, #header #nav li:last-child, #cta-cont .home-cta:last-child, .member-cont:nth-child(3n+4), .supporter:nth-child(4n+4) {margin-right:0 !important;}
+.last, #header #nav li:last-child, #cta-cont .home-cta:last-child, .member-cont:nth-child(3n+4), .supporter:nth-child(4n+4), .supporter-small:nth-child(4n+4) {margin-right:0 !important;}
 .button, #contact-info a, #contact-form input[type="submit"] {text-transform:uppercase; color:#fff; font-size:15px; background:#cb2324; border:3px solid #cb2324; padding:18px 35px; text-align:center; cursor:pointer;}
 .button:hover, #contact-info a:hover {background:#fff; color:#cb2324;}
-#header, #footer, #main-wrap, #gray-cont, #cta-cont, .container, .text, #families-cont .gray, .member-cont div, #supporters-cont, .event-cont .text, #upcoming-events, #past-events {float:left; width:100%;}
+#header, #footer, #main-wrap, #gray-cont, #cta-cont, .container, .text, #families-cont .gray, .member-cont div, .supporters-cont, .event-cont .text, #upcoming-events, #past-events {float:left; width:100%;}
 #banner {position:absolute; top:100px; left:0; width:100%; height:269px;}
 #main-wrap {margin-top:272px;}
 .page-title {font-size:26px; float:left; width:100%; padding-bottom:20px; border-bottom:1px solid #000; margin:40px 0 25px 0;}
@@ -116,6 +116,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {-webkit-appe
 .supporter {float:left; border:2px solid #002157; width:226px; height:226px; margin:0 26px 26px 0; background:#002157; color:#fff; text-align:center; font-size:22px;}
 .supporter .supporter-name {height:226px; width:226px; display:table-cell; vertical-align:middle;}
 .supporter .supporter-name span {max-width:200px; display:inline-block;}
+.supporter-small {float:left; width:226px; margin:0 26px 26px 0; color:#002157;}
 
 /*CONTACT*/
 #contact-info {float:left; width:455px; margin-top:15px; font-size:22px; line-height:38px;}
