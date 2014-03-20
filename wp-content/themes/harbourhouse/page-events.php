@@ -32,7 +32,7 @@
 		<div class="page-title">Past Events</div>
 		<div class="button sort-events">Upcoming events</div>
 	</div>
-	<?php query_posts(array('post_type' => 'Events', 'orderby'=> 'title',  'order' => 'ASC', 'posts_per_page' => 100, 'cat'=> 8)); ?>
+	<?php query_posts(array('post_type' => 'Events',  'order' => 'ASC', 'posts_per_page' => 100, 'cat'=> 8)); ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 				<div class="event-cont">
 					<div class="mid-cont">
